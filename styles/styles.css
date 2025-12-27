@@ -1,0 +1,124 @@
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: 'Indie Flower', cursive;
+      background: url('../images/wood-bg.webp') center/cover no-repeat;
+      overflow: hidden;
+    }
+
+    /* Logo */
+    .logo {
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: floatY 4s ease-in-out infinite;
+    }
+
+    .logo img {
+      width: 260px;
+    }
+
+    /* Sticky note */
+    .note {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .note img {
+      width: 340px;
+      display: block;
+    }
+
+    .note-content {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding: 0 20px;
+      color: #3b2b1f;
+    }
+
+    .note-content h1 {
+      font-size: 42px;
+      margin: 0;
+    }
+
+    .note-content p {
+      font-size: 28px;
+      margin: -10px 0 30px;
+    }
+
+    .google-btn {
+      display: inline-flex;
+      align-items: center;
+      /* gap: 10px;
+      background: #fff;
+      border-radius: 8px;
+      padding: 10px 18px; */
+      cursor: pointer;
+      box-shadow: 0 4px 0 #ccc;
+      transition: transform 0.1s;
+    }
+
+    .google-btn:hover {
+      transform: translateY(2px);
+    }
+
+    .google-btn img {
+      width: 226px;
+    }
+
+    .google-btn span {
+      font-size: 20px;
+    }
+
+    /* Side illustrations */
+    .side {
+      position: absolute;
+      bottom: 40px;
+      animation: floatX 5s ease-in-out infinite;
+    }
+    .side.right img {
+      width: 160px;
+        position: absolute;
+        bottom: 0px;
+    }
+    .side.left img {
+        width: 359px;
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .side.left {
+      left: 20px;
+      width: 230px;
+      bottom: 0px;
+    }
+
+    .side.right {
+      right: 160px;
+      bottom: 0px;
+      animation-delay: 2s;
+    }
+
+
+
+    /* Animations */
+    @keyframes floatX {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(15px); }
+    }
+
+    @keyframes floatY {
+      0%, 100% { transform: translate(-50%, 0); }
+      50% { transform: translate(-50%, 15px); }
+    }

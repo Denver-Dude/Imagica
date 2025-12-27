@@ -1,0 +1,92 @@
+
+
+body {
+margin: 0;
+width: 100vw;
+height: 100vh;
+overflow: hidden;
+font-family: 'Indie Flower', cursive;
+background: url('../images/wood-bg.webp') center/cover no-repeat;
+}
+
+
+.header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  height: 80px; /* ADD THIS */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+
+.logo { height: 60px; }
+.center-banner { height: 70px; }
+.signout { height: 45px; cursor: pointer; }
+
+
+.toolbar {
+  position: absolute;
+  top: 140px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 5; /* ADD THIS */
+}
+
+
+.tool {
+  width: 60px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+
+
+.board {
+position: relative;
+width: 100%;
+height: 100%;
+}
+
+.note {
+  position: absolute;
+  width: 240px;
+  padding: 14px;
+  background: #f6e27f;
+  box-shadow: 0 12px 25px rgba(0,0,0,.35);
+  cursor: grab;
+  user-select: none;
+}
+
+/* POLAROID STYLE */
+.note.photo {
+  background: #fff;
+  padding: 12px 12px 28px;
+}
+
+.note.photo img {
+  width: 100%;
+  display: block;
+  background: #eee;
+}
+
+/* TEXT NOTE */
+.note.text h3,
+.note.text p {
+  outline: none;
+  cursor: text;
+}
+
+.note.text h3 {
+  margin: 0 0 6px;
+  font-size: 22px;
+}
+
+.note.text p {
+  font-size: 16px;
+}

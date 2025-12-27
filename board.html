@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Imagica 2026 Board</title>
+<link rel="stylesheet" href="styles/board.css" />
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="header">
+<img src="images/logo.webp" class="logo" />
+<img src="images/center.webp" class="center-banner" />
+<img src="images/signout.webp" class="signout" />
+</div>
+
+
+<div class="toolbar">
+<img src="images/photo.webp" id="addImgBtn" class="tool" />
+<img src="images/text.webp" id="addTextBtn" class="tool" />
+</div>
+
+
+<input type="file" id="photoInput" accept="image/*" hidden />
+
+
+<div class="board" id="board"></div>
+
+
+<script type="module" src="scripts/board.js"></script>
+
+</body>
+</html>
